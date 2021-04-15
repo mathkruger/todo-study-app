@@ -8,12 +8,16 @@ import { FormsModule } from '@angular/forms';
 import { TodoItemComponent } from './shared/components/todo-item/todo-item.component';
 import { TodoListComponent } from './shared/components/todo-list/todo-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoComponent } from './pages/todo/todo.component';
+import { TodoFormComponent } from './pages/todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoItemComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoComponent,
+    TodoFormComponent
   ],
   imports: [
     BrowserModule,

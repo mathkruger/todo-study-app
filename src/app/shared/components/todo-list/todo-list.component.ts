@@ -13,6 +13,22 @@ export class TodoListComponent implements OnInit {
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {
+    this.list();
+  }
+
+  update(item: Todo) {
+    this.todoService.update(item).subscribe(() => {
+      this.list;
+    })
+  }
+
+  delete(id: number) {
+    this.todoService.delete(id).subscribe(() => {
+      this.list();
+    })
+  }
+
+  list() {
     this.todoService.list().subscribe(re => {
       this.todoList = re;
     });

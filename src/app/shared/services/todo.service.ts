@@ -39,4 +39,12 @@ export class TodoService {
         return throwError(err);
       }));
   }
+
+  update(model: Todo) {
+    return this.httpClient.put(this.url + '/' + model.id, model).pipe(
+      catchError(err => {
+        console.error('an error has occurred: ' + err);
+        return throwError(err);
+      }));
+  }
 }

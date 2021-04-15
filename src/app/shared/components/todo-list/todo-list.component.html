@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let todo of todoList">
-    <app-todo-item [item]="todo"></app-todo-item>
+    <app-todo-item [item]="todo" (onDelete)="delete($event)" (onStatusChange)="update($event)"></app-todo-item>
   </li>
 </ul>
