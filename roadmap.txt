@@ -1,0 +1,19 @@
+* Todo App *
+- Componentes:
+    - Listagem:
+        - Botão adicionar
+        - Listagem de Tarefas
+    - Item:
+        - Descrição da tarefa
+        - Botão excluir, marcar como feito
+    - Cadastro:
+        - campo para descrição da tarefa
+        - botão salvar
+- Rotas:
+    - Principal: Componente de Listagem
+    - Cadastro: Componente de Cadastro
+- Serviços:
+    - Todo Service:
+        - CRUD
+- Models:
+    - Todo

@@ -1,0 +1,8 @@
+<div class="todo-item">
+  {{ item.description }}
+  
+  <div class="actions">
+    <input type="checkbox" [(ngModel)]="item.done" (change)="onStatusChangeClick()"/>
+    <button (click)="onDeleteClick()">Delete</button>
+  </div>
+</div>
