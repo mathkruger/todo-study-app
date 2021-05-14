@@ -11,11 +11,6 @@
       "done": false
     },
     {
-      "id": 3,
-      "description": "Tarefa 3",
-      "done": false
-    },
-    {
       "id": 4,
       "description": "Tarefa 4",
       "done": true
@@ -24,6 +19,16 @@
       "id": 5,
       "description": "Tarefa 5",
       "done": true
+    },
+    {
+      "description": "tarefinha",
+      "done": false,
+      "id": 6
+    },
+    {
+      "description": "tarefa nova",
+      "done": true,
+      "id": 8
     }
   ]
 }

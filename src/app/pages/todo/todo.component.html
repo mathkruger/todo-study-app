@@ -1,3 +1,5 @@
 <h1>Todo App</h1>
-<a [routerLink]="['/cadastro']">Novo item</a>
+<a [routerLink]="['/cadastro']" [state]="{origem: 'Listagem'}">Novo item</a>
+
+{{ mensagem }}
 <app-todo-list></app-todo-list>
