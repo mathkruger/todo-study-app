@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TodoFormComponent } from './pages/todo-form/todo-form.component';
 import { TodoComponent } from './pages/todo/todo.component';
+import { Logged } from './shared/guards/logged.guard';
 
 
 const routes: Routes = [{
@@ -9,7 +10,10 @@ const routes: Routes = [{
   component: TodoComponent
 },{
   path: 'cadastro',
-  component: TodoFormComponent
+  component: TodoFormComponent,
+  canActivate: [
+    Logged
+  ]
 }];
 
 @NgModule({
